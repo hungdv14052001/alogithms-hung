@@ -1,0 +1,14 @@
+D:\Thực tập\Bài Học\Bai2Array\Bai2Array\bin\Debug\netcoreapp3.1\Bai2Array.exe
+D:\Thực tập\Bài Học\Bai2Array\Bai2Array\bin\Debug\netcoreapp3.1\Bai2Array.deps.json
+D:\Thực tập\Bài Học\Bai2Array\Bai2Array\bin\Debug\netcoreapp3.1\Bai2Array.runtimeconfig.json
+D:\Thực tập\Bài Học\Bai2Array\Bai2Array\bin\Debug\netcoreapp3.1\Bai2Array.runtimeconfig.dev.json
+D:\Thực tập\Bài Học\Bai2Array\Bai2Array\bin\Debug\netcoreapp3.1\Bai2Array.dll
+D:\Thực tập\Bài Học\Bai2Array\Bai2Array\bin\Debug\netcoreapp3.1\Bai2Array.pdb
+D:\Thực tập\Bài Học\Bai2Array\Bai2Array\obj\Debug\netcoreapp3.1\Bai2Array.csproj.AssemblyReference.cache
+D:\Thực tập\Bài Học\Bai2Array\Bai2Array\obj\Debug\netcoreapp3.1\Bai2Array.GeneratedMSBuildEditorConfig.editorconfig
+D:\Thực tập\Bài Học\Bai2Array\Bai2Array\obj\Debug\netcoreapp3.1\Bai2Array.AssemblyInfoInputs.cache
+D:\Thực tập\Bài Học\Bai2Array\Bai2Array\obj\Debug\netcoreapp3.1\Bai2Array.AssemblyInfo.cs
+D:\Thực tập\Bài Học\Bai2Array\Bai2Array\obj\Debug\netcoreapp3.1\Bai2Array.csproj.CoreCompileInputs.cache
+D:\Thực tập\Bài Học\Bai2Array\Bai2Array\obj\Debug\netcoreapp3.1\Bai2Array.dll
+D:\Thực tập\Bài Học\Bai2Array\Bai2Array\obj\Debug\netcoreapp3.1\Bai2Array.pdb
+D:\Thực tập\Bài Học\Bai2Array\Bai2Array\obj\Debug\netcoreapp3.1\Bai2Array.genruntimeconfig.cache
