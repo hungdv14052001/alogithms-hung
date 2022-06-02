@@ -1,0 +1,14 @@
+D:\Thực tập\Bài Học\Bai2Alogithms\Bai2Alogithms\bin\Debug\netcoreapp3.1\Bai2Alogithms.exe
+D:\Thực tập\Bài Học\Bai2Alogithms\Bai2Alogithms\bin\Debug\netcoreapp3.1\Bai2Alogithms.deps.json
+D:\Thực tập\Bài Học\Bai2Alogithms\Bai2Alogithms\bin\Debug\netcoreapp3.1\Bai2Alogithms.runtimeconfig.json
+D:\Thực tập\Bài Học\Bai2Alogithms\Bai2Alogithms\bin\Debug\netcoreapp3.1\Bai2Alogithms.runtimeconfig.dev.json
+D:\Thực tập\Bài Học\Bai2Alogithms\Bai2Alogithms\bin\Debug\netcoreapp3.1\Bai2Alogithms.dll
+D:\Thực tập\Bài Học\Bai2Alogithms\Bai2Alogithms\bin\Debug\netcoreapp3.1\Bai2Alogithms.pdb
+D:\Thực tập\Bài Học\Bai2Alogithms\Bai2Alogithms\obj\Debug\netcoreapp3.1\Bai2Alogithms.csproj.AssemblyReference.cache
+D:\Thực tập\Bài Học\Bai2Alogithms\Bai2Alogithms\obj\Debug\netcoreapp3.1\Bai2Alogithms.GeneratedMSBuildEditorConfig.editorconfig
+D:\Thực tập\Bài Học\Bai2Alogithms\Bai2Alogithms\obj\Debug\netcoreapp3.1\Bai2Alogithms.AssemblyInfoInputs.cache
+D:\Thực tập\Bài Học\Bai2Alogithms\Bai2Alogithms\obj\Debug\netcoreapp3.1\Bai2Alogithms.AssemblyInfo.cs
+D:\Thực tập\Bài Học\Bai2Alogithms\Bai2Alogithms\obj\Debug\netcoreapp3.1\Bai2Alogithms.csproj.CoreCompileInputs.cache
+D:\Thực tập\Bài Học\Bai2Alogithms\Bai2Alogithms\obj\Debug\netcoreapp3.1\Bai2Alogithms.dll
+D:\Thực tập\Bài Học\Bai2Alogithms\Bai2Alogithms\obj\Debug\netcoreapp3.1\Bai2Alogithms.pdb
+D:\Thực tập\Bài Học\Bai2Alogithms\Bai2Alogithms\obj\Debug\netcoreapp3.1\Bai2Alogithms.genruntimeconfig.cache
