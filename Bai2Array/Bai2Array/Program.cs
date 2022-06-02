@@ -48,19 +48,23 @@ namespace Bai2Array
         //bài 4: "Hãy viết function findProduct(listProduct, nameProduct) trả về product có tên = nameProduct truyền vào."
         static Product findProduct(List<Product> listProduct, string nameProduct)
         {
-            Product kq = new Product();
+            Product result = new Product();
             for (int i = 0; i < listProduct.Count; i++)
             {
                 if (listProduct[i].Name.Equals(nameProduct))
                 {
-                    kq = listProduct[i];
+                    result = listProduct[i];
                 }
             }
-            if (kq.Name == null)
+            if (result.Name == null)
             {
-                Console.WriteLine("Không tìm thầy Product nào");
+                return null;
             }
-            return kq;
+            else
+            {
+                return result;
+            }
+            
         }
 
         //bài 5: "Hãy viết function findProductByCategory(listProduct, categoryId) trả về danh sách product có categoryId = categoryId truyền vào"
@@ -77,18 +81,18 @@ namespace Bai2Array
             return kq;
         }
         // bài 7: "Hãy viết function findProductByPrice(listProduct, price) trả về danh sách tên product có giá <= price truyền vào"
-        static List<Product> findProductByPrice(List<Product> listProduct, int price)
+        static List<string> findProductByPrice(List<Product> listProduct, int price)
         {
-            List<Product> kq = new List<Product>();
+            List<string> result = new List<string>();
             for (int i = 0; i < listProduct.Count; i++)
             {
 
                 if (listProduct[i].Price <= price)
                 {
-                    kq.Add(listProduct[i]);
+                    result.Add(listProduct[i].Name);
                 }
             }
-            return kq;
+            return result;
         }
 
         //bài 11: "Hãy viết function sortByPrice(listProduct) trả về danh sách product sắp xếp theo giá từ thấp đến cao.Làm theo thuật toán buble."
@@ -172,28 +176,28 @@ namespace Bai2Array
         // Bài 15: "Hãy viết function minByPrice(listProduct) trả về  product có giá nhỏ nhất"
         static Product minByPrice(List<Product> listProduct)
         {
-            Product p = listProduct[0];
+            Product result = listProduct[0];
             for (int i = 1; i < listProduct.Count; i++)
             {
-                if(listProduct[i].Price< p.Price)
+                if(listProduct[i].Price< result.Price)
                 {
-                    p = listProduct[i];
+                    result = listProduct[i];
                 }
             }
-            return p;
+            return result;
         }
         //Bài 16: "Hãy viết function maxByPrice(listProduct) trả về  product có giá lớn nhất"
         static Product maxByPrice(List<Product> listProduct)
         {
-            Product p = listProduct[0];
+            Product result = listProduct[0];
             for (int i = 1; i < listProduct.Count; i++)
             {
-                if (listProduct[i].Price > p.Price)
+                if (listProduct[i].Price > result.Price)
                 {
-                    p = listProduct[i];
+                    result = listProduct[i];
                 }
             }
-            return p;
+            return result;
         }
     }
 }
