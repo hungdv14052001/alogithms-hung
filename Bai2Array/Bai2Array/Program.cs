@@ -38,10 +38,10 @@ namespace Bai2Array
             listCategory.Add(c3);
             Category c4 = new Category(4, "Acessory");
             listCategory.Add(c4);
-            Dictionary<Product, string> list = mapProductByCategory(listProduct, listCategory);
-            foreach(KeyValuePair<Product, string> it in list)
+            sortByCategoryName(listProduct, listCategory);
+            foreach (Product p in listProduct)
             {
-                Console.WriteLine(it.Key.Name + "    " + it.Key.CategoryId + "   " + it.Value);
+                Console.WriteLine(p.Name + "   " + getCategoryName(p.CategoryId, listCategory));
             }
         }
 
@@ -140,7 +140,8 @@ namespace Bai2Array
             {
                 valueToInsert = listProduct[i];
                 holePosition = i - 1;
-                while (holePosition >= 0 && (int)getCategoryName(listProduct[holePosition].CategoryId, listCategory)[0] > (int)getCategoryName(valueToInsert.CategoryId, listCategory)[0])
+                //(int)[0] > (int)[0]
+                while (holePosition >= 0 && getCategoryName(listProduct[holePosition].CategoryId, listCategory).CompareTo(getCategoryName(valueToInsert.CategoryId, listCategory))>0)
                 {
                     listProduct[holePosition + 1] = listProduct[holePosition];
                     holePosition--;
@@ -176,28 +177,44 @@ namespace Bai2Array
         // Bài 15: "Hãy viết function minByPrice(listProduct) trả về  product có giá nhỏ nhất"
         static Product minByPrice(List<Product> listProduct)
         {
-            Product result = listProduct[0];
-            for (int i = 1; i < listProduct.Count; i++)
+            if (listProduct == null)
             {
-                if(listProduct[i].Price< result.Price)
-                {
-                    result = listProduct[i];
-                }
+                return null;
             }
-            return result;
+            else
+            {
+                Product result = listProduct[0];
+                for (int i = 1; i < listProduct.Count; i++)
+                {
+                    if (listProduct[i].Price < result.Price)
+                    {
+                        result = listProduct[i];
+                    }
+                }
+                return result;
+            }
+            
         }
         //Bài 16: "Hãy viết function maxByPrice(listProduct) trả về  product có giá lớn nhất"
         static Product maxByPrice(List<Product> listProduct)
         {
-            Product result = listProduct[0];
-            for (int i = 1; i < listProduct.Count; i++)
+            if (listProduct == null)
             {
-                if (listProduct[i].Price > result.Price)
-                {
-                    result = listProduct[i];
-                }
+                return null;
             }
-            return result;
+            else
+            {
+                Product result = listProduct[0];
+                for (int i = 1; i < listProduct.Count; i++)
+                {
+                    if (listProduct[i].Price > result.Price)
+                    {
+                        result = listProduct[i];
+                    }
+                }
+                return result;
+            }
+            
         }
     }
 }

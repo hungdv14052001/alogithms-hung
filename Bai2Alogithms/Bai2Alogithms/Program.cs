@@ -13,19 +13,19 @@ namespace Bai2Alogithms
             menus.Add(m1);
             Menu m2 = new Menu(2, "Xa hoi", 0);
             menus.Add(m2);
-            Menu m3 = new Menu(3, "The thao trong nuoc", 1);
+            Menu m3 = new Menu(3, "The trong nuoc", 1);
             menus.Add(m3);
             Menu m4 = new Menu(4, "Giao thong", 2);
             menus.Add(m4);
             Menu m5 = new Menu(5, "Moi truong", 2);
             menus.Add(m5);
-            Menu m6 = new Menu(6, "the thao quoc the", 1);
+            Menu m6 = new Menu(6, "the thao quoc te", 1);
             menus.Add(m6);
             Menu m7 = new Menu(7, "Moi truong do thi", 5);
             menus.Add(m7);
             Menu m8 = new Menu(8, "Un tac giao thong", 4);
             menus.Add(m8);
-            Console.WriteLine(calMonthByRecursion(100, 20));
+            printMenuByRecursion(menus, menus.Count);
         }
         //Bài 21: "Hãy viết function calSalary(salary, n) , trả về lương của năm thứ n. Biết rằng cứ mỗi năm lương sẽ tăng bằng 10% năm liền trước.Viết bằng 2 cách, đệ qui và không dùng đệ qui"
         
@@ -53,7 +53,7 @@ namespace Bai2Alogithms
         }
 
         //Bài 22: "Hãy viết function calMonth(money, rate) , trả về số tháng tiền cần gửi tiết kệm để tiền gốc + lãi tăng gấp đôi so với tiền gốc.Money là số tiền gốc, rate là % lãi suất mỗi tháng. ví dụ calMount(1000, 5). Viết bằng 2 cách, đệ qui và không dùng đệ qui"
-        static float a;
+
         static int calMonthByRecursion(float money, float rate)
         {
             // 0: 100       0
@@ -80,7 +80,6 @@ namespace Bai2Alogithms
             {
                 return calMonthByRecursion(money, rate)+1;
             }
-           
             
         }
 
@@ -122,6 +121,60 @@ namespace Bai2Alogithms
                         }
                     }
                 }
+            }
+        }
+        static void printMenuByRecursion(List<Menu> menus, int n)
+        {
+            if (n == 0)
+            {
+                return;
+            }
+            else
+            {
+                int parentID = menus[0].Id;
+                Console.WriteLine(getLevelSymbol(menus, menus[0])+menus[0].Title);
+                //Đổi chỗ cho cái vừa in xuống cuối
+                Menu menu = menus[0];
+                for (int j = 0; j < n - 1; j++)
+                {
+                    menus[j] = menus[j + 1];
+                }
+                menus[n - 1] = menu;
+                n--;
+                //Chuyển các menu con lên đầu
+                for (int i = 0; i < n; i++)
+                {
+                    if (menus[i].Parent_id == parentID)
+                    {
+                        Menu temporaryMenu = menus[i];
+                        for (int j = i; j > 0; j--)
+                        {
+                            menus[j] = menus[j - 1];
+                        }
+                        menus[0] = temporaryMenu;   
+                    }
+                }
+                printMenuByRecursion(menus, n);
+            }
+        }
+        
+        static string getLevelSymbol(List<Menu> menus, Menu menu)
+        {
+            if (menu.Parent_id == 0)
+            {
+                return "";
+            }
+            else
+            {
+                for(int i=0; i< menus.Count; i++)
+                {
+                    if (menu.Parent_id == menus[i].Id)
+                    {
+                        menu = menus[i];
+                        break;
+                    }
+                }
+                return getLevelSymbol(menus, menu)+"--";
             }
         }
     }
